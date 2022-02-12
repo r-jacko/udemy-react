@@ -35,7 +35,7 @@ const Course = ({ authors, id, img, isUserContext, price, title }) => {
   return (
     <li>
       <article className={block()}>
-        <h3 className={block("title")}></h3>
+        <h3 className={block("title")}>{title}</h3>
         <img src={img} alt={title} className={block("image")} />
         <p className={block("price")}>{`Koszt kursu: ${price}zł`}</p>
         <p className={block("authors")}>{`Autorzy kursu: ${allAuthors}`}</p>
