@@ -16,8 +16,10 @@ const AsideMenu = () => {
     user?.accessLevel === ADMIN_TYPE ? <AdminMenu /> : null;
   return (
     <section className={block()}>
-      <UserMenu isUserLogged={Boolean(user)} />
-      {adminMenuComponent}
+      <div className={block("nav-wrapper")}>
+        <UserMenu isUserLogged={Boolean(user)} />
+        {adminMenuComponent}
+      </div>
     </section>
   );
 };
